@@ -1,0 +1,1 @@
+HarmonyHeal is an advanced wellness and emotional balance platform built with modern web technologies. It helps users track their mental and physical health through daily reflections, guided activities, and AI-driven insights — promoting overall harmony between mind and body.
