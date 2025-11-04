@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HarmonyHeal 🎧</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container" id="login-section">
+    <h1>Welcome to HarmonyHeal 🎶</h1>
+    <p>Enter your name to begin your healing journey 🌿</p>
+    <input type="text" id="username" placeholder="Enter your name..." />
+    <button id="loginBtn">Start Healing</button>
+  </div>
+
+  <div class="container" id="main-section" style="display:none;">
+    <h1>HarmonyHeal <span>🎶</span></h1>
+    <p class="subtitle">Find your mood’s healing frequency — powered by AI & Music Therapy</p>
+    <p class="welcome">👋 Welcome, <span id="displayName"></span>!</p>
+
+    <div class="controls">
+      
+      <label for="mood">Select Mood:</label>
+      <select id="mood">
+        <option value="stress">Stress</option>
+        <option value="focus">Focus</option>
+        <option value="anxiety">Anxiety</option>
+        <option value="relax">Relax</option>
+        <option value="happy">Happy</option>
+        <option value="tired">Tired</option>
+        <option value="angry">Angry</option>
+      </select>
+      <button id="getBtn">🎵 Get Music</button>
+      <button id="logoutBtn">🚪 Logout</button>
+    </div>
+
+    <div id="soundwave"><div></div><div></div><div></div><div></div><div></div></div>
+    <div id="output"></div>
+
+    <section class="info-card">
+      <h3>🕓 Your Healing History</h3>
+      <ul id="history"></ul>
+    </section>
+
+    <section class="info-card">
+      <h3>📈 Mood vs Frequency Chart</h3>
+      <canvas id="freqChart"></canvas>
+    </section>
+  </div>
+
+  <footer>
+    <p>💫 Developed by</p>
+    <div class="dev-names">
+      <strong>Mohammadraihan</strong><br>
+      <strong>Asad Jamadar</strong><br>
+      <strong>Mahammad Junaid</strong>
+    </div>
+    <p>Powered by Flask + Node.js + Machine Learning</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
